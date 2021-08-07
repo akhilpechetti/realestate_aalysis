@@ -66,7 +66,7 @@ def main():
             result = predict_homeprice(location, sqft, bath, bhk)
             st.success('The estimeted price is {}L'.format(result))
     else:
-        st.error('Bedrooms are way more than bathrooms')
+        st.error('Why too many bathrooms! Decrease the count and try again:)')
     if st.button("నా గురించి తెలుసుకోండి"):
         st.text("home price in banglore")
         st.text('created by Akhil Pechetti')
