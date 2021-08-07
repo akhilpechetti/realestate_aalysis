@@ -67,7 +67,7 @@ def main():
             st.success('The estimeted price is {}L'.format(result))
     else:
         st.error('Bedrooms are way more than bathrooms')
-    if st.button("About"):
+    if st.button("నా గురించి తెలుసుకోండి"):
         st.text("home price in banglore")
         st.text('created by Akhil Pechetti')
     image=Image.open("tenor.jpeg")
