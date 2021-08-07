@@ -58,8 +58,8 @@ def main():
     st.markdown(html_temp, unsafe_allow_html=True)
     location = st.selectbox("location", __locations)
     sqft = st.number_input("sqft", 1500)
-    bhk = st.number_input("BHK", 1,15)
-    bath = st.number_input("bathrooms", 1,10)
+    bhk = st.number_input("BHK", 1)
+    bath = st.number_input("bathrooms", 1)
     result = ""
     if st.button("Predict"):
         result = predict_homeprice(location, sqft, bath, bhk)
