@@ -3,5 +3,4 @@ joblib==1.0.1
 pandas==1.2.4
 streamlit==0.86.0
 Pillow==8.3.1
-json
-sklearn
+sklearn==0.0
