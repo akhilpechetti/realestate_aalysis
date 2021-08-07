@@ -67,6 +67,8 @@ def main():
     if st.button("About"):
         st.text("home price in banglore")
         st.text('created by Akhil Pechetti')
+    image=Image.open("tenor.jpeg")
+    st.image(image)
 
 
 if __name__ == '__main__':
