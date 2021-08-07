@@ -52,11 +52,11 @@ def main():
     st.title("Realestate rate predictor in Banglore")
     html_temp = """
     <div style="background-color:tomato;padding:10px">
-    <h2 style="color:white;text-align:center;">Streamlit Realestate ML App </h2>
+    <h2 style="color:white;text-align:center;">Let's Estimate a Home Price in Banglore</h2>
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
-    location = st.text_input("location", "5th block hbr layout")
+    location = st.selectbox("location", __locations)
     sqft = st.number_input("sqft", 1000)
     bhk = st.number_input("BHK", 2)
     bath = st.number_input("bathrooms", 2)
@@ -66,7 +66,7 @@ def main():
     st.success('The estimeted price is {}L'.format(result))
     if st.button("About"):
         st.text("home price in banglore")
-        st.text("Built with Streamlit")
+        st.text('created by Akhil Pechetti')
 
 
 if __name__ == '__main__':
