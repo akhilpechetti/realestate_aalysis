@@ -61,9 +61,12 @@ def main():
     bhk = st.number_input("BHK", 1)
     bath = st.number_input("bathrooms", 1)
     result = ""
-    if st.button("Predict"):
-        result = predict_homeprice(location, sqft, bath, bhk)
-    st.success('The estimeted price is {}L'.format(result))
+    if bath<=bhk+2:
+        if st.button("Predict"):
+            result = predict_homeprice(location, sqft, bath, bhk)
+            st.success('The estimeted price is {}L'.format(result))
+    else:
+        st.error('Bedrooms are way more than bathrooms')
     if st.button("About"):
         st.text("home price in banglore")
         st.text('created by Akhil Pechetti')
