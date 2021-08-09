@@ -72,7 +72,8 @@ def main():
         st.text('created by Akhil Pechetti')
         image=Image.open("tenor.jpeg")
         st.image(image)
-
+    if st.button('credits')
+        st.text('renuka kolusu')
 
 if __name__ == '__main__':
     load_saved_artifacts()
