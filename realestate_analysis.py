@@ -73,7 +73,7 @@ def main():
         image=Image.open("tenor.jpeg")
         st.image(image)
     if st.button('credits'):
-        st.text('renuka kolusu')
+        st.text('abhichand')
 
 if __name__ == '__main__':
     load_saved_artifacts()
