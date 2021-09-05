@@ -67,13 +67,8 @@ def main():
             st.success('The estimeted price is {}L'.format(result))
     else:
         st.error('Why too many bathrooms! Decrease the count and try again:)')
-    if st.button("నా గురించి తెలుసుకోండి"):
-        st.text("home price in banglore")
-        st.text('created by Akhil Pechetti')
-        image=Image.open("tenor.jpeg")
-        st.image(image)
-    if st.button('credits'):
-        st.text('renuka kolusu')
+    if st.button("Created By"):
+        st.text('Akhil pechetti')
 
 if __name__ == '__main__':
     load_saved_artifacts()
